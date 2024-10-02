@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel ="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="form-page" id = "form-page">
+        <div class="image">
+            <div class="img"></div>
+        </div>
+
+
+        <div class = "container">
+            <div class="form">
+                    <h1> Stay updated</h1>
+                    join 60,000+ product managers recieving monthly updates on:
+                    <div class="content">
+                        <div class ="list"> 
+                            <img src ="images/icon-list.svg">
+                            <div class = "text">Product discovery and building what matters</div></div> 
+                        <div class ="list"> 
+                            <img src ="images/icon-list.svg">
+                            <div class ="text">Measure to ensure updates are a sucess </div></div> 
+                        <div class ="list"> 
+                            <img src ="images/icon-list.svg">
+                  <div class ="text">And much more!</div></div> 
+                    </div>
+                </div>
+            <form id = "form" novalidate>
+                <div>
+                    <label for ="email"><b>Email address</b></label> <span id = "email-error">invalid email adress</span><br>
+                    <input id ="email" type="email" placeholder="email@company.com">
+                </div>
+                <button type="submit" id ="submit"> Subscribe to monthly newsletter</button>
+            </form>
+        </div>
+    </div>
+    <div class ="success" id ="success">
+        <img src="images/icon-success.svg">
+        <div class="success_message">
+            <h1> Thanks for subscribing!</h1>
+            A confirmation email has been sent to <span id = "email-value"> </span>
+            . Please open it and click the button inside to confim your subcription
+        </div>
+        <button class = "return">Dismiss message</button>
+    </div>
+</body>
+    <script src="main.js"></script>
+</html>
